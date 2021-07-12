@@ -17,3 +17,7 @@ Bfs based solution. Push courses with indegree 0 (no prerequisites) to the queue
 ### Number of Longest Increasing Subsequence (LIS)
 
 NlogN sol - Create a List of List of Pairs, vector<vector< pair<int,int> >> LISbylen(N+1); in which we store the ( count of LIS end at current element, and the current element ). Suppose the current element is 4 and lower_bound gives us 3, that mean LIS of length 3 can be formed by ending at 4. To get count, We know that we can place 4 after any of the LIS of length 2 that end with an element smaller than 4. So to get the count we can add up the counts of LIS of len-1 where the last element is smaller than current element.
+
+### Kth smallest element in a matrix
+
+From left-bottom or right-top, count how many numbers (ele) are less than or equal to mid, if ele < k, then low = mid + 1, else high = mid

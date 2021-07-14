@@ -21,3 +21,7 @@ NlogN sol - Create a List of List of Pairs, vector<vector< pair<int,int> >> LISb
 ### Kth smallest element in a matrix
 
 From left-bottom or right-top, count how many numbers (ele) are less than or equal to mid, if ele < k, then low = mid + 1, else high = mid
+
+### Maximum XOR of Two Numbers in an Array
+
+Use trie. Scan trie and find max xor index... max xor is with number that differs as early as possible because we have stored from MSB to LSB

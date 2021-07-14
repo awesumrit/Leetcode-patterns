@@ -21,24 +21,25 @@ public:
                 if(sum==0)
                 {
                     ans.push_back({nums[i],nums[j],nums[k]});
-                    int val=nums[j];
-                    while(j<n && val==nums[j])
-                    {
-                        j++;
-                    }
-                    val=nums[k];
+
+                }
+                if(sum>0)
+                {
+                    int val=nums[k];
+                    k--;
                     while(k>=0 && val==nums[k])
                     {
                         k--;
                     }
                 }
-                else if(sum>0)
-                {
-                    k--;
-                }
                 else
                 {
+                    int val=nums[j];
                     j++;
+                    while(j<n && val==nums[j])
+                    {
+                        j++;
+                    }
                 }
             }
         }

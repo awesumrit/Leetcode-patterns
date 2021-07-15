@@ -53,3 +53,8 @@ Then the number of sums in [lower, upper] is j-k.
 
 Use dequeue.
 check if back element of deque is less than current element, if then pop the back element and do it as long as it is true cause we want to store only potential max elements in the deque. Push front in to result vector as soon as current sliding window end is reached. Pop front element from the deque if its position is outside the next sliding window
+
+### Count Unique Characters of All Substrings of a Given String
+
+Use the formula - prev = prev + i + occur[s[i] - 'A'][0] - 2*occur[s[i] - 'A'][1] for i in range(1,n); occur[i] -> last 2 occurences of character i + 'A' 
+ans += prev;

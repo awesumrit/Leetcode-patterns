@@ -48,3 +48,8 @@ Divide and Conquer. The merge sort based solution counts the answer while doing 
 	k is the first index satisfy sums[k] - sums[i] >= lower
 	
 Then the number of sums in [lower, upper] is j-k.
+
+### Sliding Window Maximum
+
+Use dequeue.
+check if back element of deque is less than current element, if then pop the back element and do it as long as it is true cause we want to store only potential max elements in the deque. Push front in to result vector as soon as current sliding window end is reached. Pop front element from the deque if its position is outside the next sliding window

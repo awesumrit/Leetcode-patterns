@@ -57,4 +57,5 @@ check if back element of deque is less than current element, if then pop the bac
 ### Count Unique Characters of All Substrings of a Given String
 
 Use the formula - prev = prev + i + occur[s[i] - 'A'][0] - 2*occur[s[i] - 'A'][1] for i in range(1,n); occur[i] -> last 2 occurences of character i + 'A' 
-ans += prev;
+
+ans += prev; and initially occur[s[0] - 'A'][1] = 0; all others -1

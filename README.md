@@ -39,3 +39,12 @@ Use priority queue:
 	Increment the pointer nums[min_i]nums[min_i].
 
 	Repeat steps 2 to 4 till any of the lists gets exhausted.
+
+### Count of Range Sum
+
+Divide and Conquer. The merge sort based solution counts the answer while doing the merge. During the merge stage, we have already sorted the left half [start, mid) and right half [mid, end). We then iterate through the left half with index i. For each i, we need to find two indices k and j in the right half where
+
+	j is the first index satisfy sums[j] - sums[i] > upper and
+	k is the first index satisfy sums[k] - sums[i] >= lower
+	
+Then the number of sums in [lower, upper] is j-k.

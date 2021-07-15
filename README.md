@@ -30,12 +30,12 @@ Use trie. Scan trie and find max xor index... max xor is with number that differ
 
 Use priority queue:
 
-Initialize next array(pointers) with all 0's.
+	Initialize next array(pointers) with all 0's.
 
-Find the indices of the lists containing the minimum(min_i) and the maximum(max_i) elements amongst the elements pointed by the nextnext array. Use min-heap to get the min value. Directly compare the updated min value with the last maximum value to determine the current maximum value.
+	Find the indices of the lists containing the minimum(min_i) and the maximum(max_i) elements amongst the elements pointed by the nextnext array. Use min-heap to get the min value. Directly compare the updated min value with the last maximum value to determine the current maximum value.
 
-If the range formed by the maximum and minimum elements found above is larger than the previous maximum range, update the boundary values used for the maximum range.
+	If the range formed by the maximum and minimum elements found above is larger than the previous maximum range, update the boundary values used for the maximum range.
 
-Increment the pointer nums[min_i]nums[min_i].
+	Increment the pointer nums[min_i]nums[min_i].
 
-Repeat steps 2 to 4 till any of the lists gets exhausted.
+	Repeat steps 2 to 4 till any of the lists gets exhausted.

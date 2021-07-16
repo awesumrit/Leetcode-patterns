@@ -59,3 +59,8 @@ check if back element of deque is less than current element, if then pop the bac
 Use the formula - prev = prev + i + occur[s[i] - 'A'][0] - 2*occur[s[i] - 'A'][1] for i in range(1,n); occur[i] -> last 2 occurences of character i + 'A' 
 
 ans += prev; and initially occur[s[0] - 'A'][1] = 0; all others -1
+
+### Trapping Rain Water
+
+https://leetcode.com/problems/trapping-rain-water/solution/
+From O(n), O(n) sol to O(n), O(1)

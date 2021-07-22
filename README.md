@@ -64,3 +64,7 @@ ans += prev; and initially occur[s[0] - 'A'][1] = 0; all others -1
 
 https://leetcode.com/problems/trapping-rain-water/solution/
 From O(n), O(n) sol to O(n), O(1)
+
+### Prefix and Suffix Search
+
+Trie of Suffix Wrapped Words -  insert '#apple', 'e#apple', 'le#apple', 'ple#apple', 'pple#apple', 'apple#apple' into the trie. Then for a query like prefix = "ap", suffix = "le", we can find it by querying our trie for le#ap

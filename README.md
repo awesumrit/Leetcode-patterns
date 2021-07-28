@@ -68,3 +68,8 @@ From O(n), O(n) sol to O(n), O(1)
 ### Prefix and Suffix Search
 
 Trie of Suffix Wrapped Words -  insert '#apple', 'e#apple', 'le#apple', 'ple#apple', 'pple#apple', 'apple#apple' into the trie. Then for a query like prefix = "ap", suffix = "le", we can find it by querying our trie for le#ap
+
+
+### Maximum Frequency Stack
+
+Make stack of stacks and push each element with the current frequency, while popping, decrease frequency and clear stack if size is 0.

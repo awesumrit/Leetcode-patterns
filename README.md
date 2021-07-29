@@ -73,3 +73,7 @@ Trie of Suffix Wrapped Words -  insert '#apple', 'e#apple', 'le#apple', 'ple#app
 ### Maximum Frequency Stack
 
 Make stack of stacks and push each element with the current frequency, while popping, decrease frequency and clear stack if size is 0.
+
+### Substring with Concatenation of All Words
+
+Sliding window approach

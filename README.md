@@ -81,3 +81,7 @@ Sliding window approach
 ### Course Schedule III
 
 Sort by custom comparator with ascending order of completion deadline and then push durations to the priority queue, pop if duration is larger than pq.top()
+
+### Word Search II
+
+Trie and DFS based solution.

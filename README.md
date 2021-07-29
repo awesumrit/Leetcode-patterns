@@ -77,3 +77,7 @@ Make stack of stacks and push each element with the current frequency, while pop
 ### Substring with Concatenation of All Words
 
 Sliding window approach
+
+### Course Schedule III
+
+Sort by custom comparator with ascending order of completion deadline and then push durations to the priority queue, pop if duration is larger than pq.top()

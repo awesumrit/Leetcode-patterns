@@ -85,3 +85,9 @@ Sort by custom comparator with ascending order of completion deadline and then p
 ### Word Search II
 
 Trie and DFS based solution.
+
+### MEDIUM
+
+### Gray code
+
+Use bit manipulation, n ^ (n>>1) produces adjacent nums that differ only in 1 bit

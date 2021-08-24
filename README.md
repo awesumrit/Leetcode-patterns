@@ -86,6 +86,9 @@ Sort by custom comparator with ascending order of completion deadline and then p
 
 Trie and DFS based solution.
 
+### Largest Rectangle in Histogram
+
+Compute left_min and right_min arrays using stack, then find max value of (right_min - left_min - 1)*height
 ### MEDIUM
 
 ### Gray code

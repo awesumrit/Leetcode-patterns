@@ -89,6 +89,11 @@ Trie and DFS based solution.
 ### Largest Rectangle in Histogram
 
 Compute left_min and right_min arrays using stack, then find max value of (right_min - left_min - 1)*height
+
+### Minimum Window Substring
+
+Store and reduce the count in map, when remaining values are 0 then find the minimum and increase map[left], if it becomes > 0, then increase remaining
+
 ### MEDIUM
 
 ### Gray code

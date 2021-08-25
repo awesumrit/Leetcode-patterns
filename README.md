@@ -94,6 +94,10 @@ Compute left_min and right_min arrays using stack, then find max value of (right
 
 Store and reduce the count in map, when remaining values are 0 then find the minimum and increase map[left], if it becomes > 0, then increase remaining
 
+### Reducing Dishes
+
+Sort in the reverse order, then compute prefix sum and prefix sum of prefix sum, which will take into account i*num[i], hence O(n) sol
+
 ### MEDIUM
 
 ### Gray code

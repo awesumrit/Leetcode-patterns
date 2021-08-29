@@ -98,6 +98,9 @@ Store and reduce the count in map, when remaining values are 0 then find the min
 
 Sort in the reverse order, then compute prefix sum and prefix sum of prefix sum, which will take into account i*num[i], hence O(n) sol
 
+### Maximum Profit in Job Scheduling
+
+Store start time with positive values and end time with negative, making pair with their index in the array, sort by absolute value, keeping end time first if it is equal to some start time. Iterate and add max value if found start of some before end, else update max value.
 ### MEDIUM
 
 ### Gray code

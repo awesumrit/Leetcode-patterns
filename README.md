@@ -101,6 +101,10 @@ Sort in the reverse order, then compute prefix sum and prefix sum of prefix sum,
 ### Maximum Profit in Job Scheduling
 
 Store start time with positive values and end time with negative, making pair with their index in the array, sort by absolute value, keeping end time first if it is equal to some start time. Iterate and add max value if found start of some before end, else update max value.
+
+### Create Maximum Number
+
+Make Sure to compare the vectors directly while merging and taking max, use Monotonic stack, for all values from 0 to k, find the best max subset of i and k-i from both the arrays, merge them and take max of result
 ### MEDIUM
 
 ### Gray code

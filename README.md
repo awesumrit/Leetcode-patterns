@@ -119,3 +119,7 @@ Compute index of first left min and right min for each ele using stack approach,
 ### Redundant Connection
 
 Use union find by rank algo and if parent of src and dest of an edge are equal, then return that edge
+
+### Evaluate Division
+
+Use BFS based apprach and pairs in queue

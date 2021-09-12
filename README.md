@@ -114,3 +114,8 @@ Use bit manipulation, n ^ (n>>1) produces adjacent nums that differ only in 1 bi
 ### Sum of Subarray Minimums
 
 Compute index of first left min and right min for each ele using stack approach, this gives the count of no of times that element will be added, which is left[i]*right[i]*arr[i], add all, O(3n) sol
+
+
+### Redundant Connection
+
+Use union find by rank algo and if parent of src and dest of an edge are equal, then return that edge

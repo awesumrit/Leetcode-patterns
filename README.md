@@ -105,6 +105,7 @@ Store start time with positive values and end time with negative, making pair wi
 ### Create Maximum Number
 
 Make Sure to compare the vectors directly while merging and taking max, use Monotonic stack, for all values from 0 to k, find the best max subset of i and k-i from both the arrays, merge them and take max of result
+
 ### MEDIUM
 
 ### Gray code
@@ -123,3 +124,7 @@ Use union find by rank algo and if parent of src and dest of an edge are equal, 
 ### Evaluate Division
 
 Use BFS based apprach and pairs in queue
+
+### Topological Sort (Course Schedule)
+
+Use BFS, push 0 indegree nodes initially and then pop from queue and decrease adj nodes' indegree, push if it becomes 0, cnt number of times elements are popped from the queue, if it is not equal to the number of nodes in the graph, then there exists a cycle, otherwise each pop should be pushed to the ans and return

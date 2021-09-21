@@ -116,7 +116,6 @@ Use bit manipulation, n ^ (n>>1) produces adjacent nums that differ only in 1 bi
 
 Compute index of first left min and right min for each ele using stack approach, this gives the count of no of times that element will be added, which is left[i]*right[i]*arr[i], add all, O(3n) sol
 
-
 ### Redundant Connection
 
 Use union find by rank algo and if parent of src and dest of an edge are equal, then return that edge
@@ -128,3 +127,7 @@ Use BFS based apprach and pairs in queue
 ### Topological Sort (Course Schedule)
 
 Use BFS, push 0 indegree nodes initially and then pop from queue and decrease adj nodes' indegree, push if it becomes 0, cnt number of times elements are popped from the queue, if it is not equal to the number of nodes in the graph, then there exists a cycle, otherwise each pop should be pushed to the ans and return
+
+### Add all greater values to every node in a given BST
+
+Use pointer for storing sum and as argument of helper function and to traverse the BST in descending order we use reverse in-order traversal of BST. This takes a global variable sum which is updated at every node and once the root node is reached it is added to the value of root node and value of the root node is updated.

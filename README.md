@@ -1,6 +1,10 @@
 # Leetcode-patterns
 The solutions to leetcode patterns problems
 
+### Max Rectangle in Binary Matrix
+
+Use largest rectangle in histogram as black box, now add values of prev rows ones to current rows ones and then calculate max area with that vector height of histograms
+For hist, use left_min and right_min with the help of stack for each index and calculate area as (right_min - left_min -1)*height[i]
 ### Maximum Product Subarray
 
 Enhanced Kadane's sol - Swap the max and min prod values when you encounter negative values

@@ -151,3 +151,8 @@ Use BFS, push 0 indegree nodes initially and then pop from queue and decrease ad
 ### Add all greater values to every node in a given BST
 
 Use pointer for storing sum and as argument of helper function and to traverse the BST in descending order we use reverse in-order traversal of BST. This takes a global variable sum which is updated at every node and once the root node is reached it is added to the value of root node and value of the root node is updated.
+
+### Meet in the middle
+
+Partition Array Into Two Arrays to Minimize Sum Differenc. Arbitrarily divide nums into two halves (two arrays). For both halves, pre-calculate a 2D array where the kth index will store all possible sum values if only k elements from this half are added. For each sum of k elements in the first half, find the best sum of n-k elements in the second half such that the two sums add up to a value closest to the target sum from hint 1. These two subsets will form one array of the partition.
+Use binary search and compare the closenes of the sum val in right array (lower_bound iterator and the ele just before that) to the sum val in left array 
